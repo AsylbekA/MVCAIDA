@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.29509.3
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MVCAIDA", "MVCAIDA\MVCAIDA.csproj", "{18C68FCA-644A-4D55-8C83-272DAE52FE64}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{18C68FCA-644A-4D55-8C83-272DAE52FE64}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{18C68FCA-644A-4D55-8C83-272DAE52FE64}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{18C68FCA-644A-4D55-8C83-272DAE52FE64}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{18C68FCA-644A-4D55-8C83-272DAE52FE64}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {A2ABBDFE-2A31-41F1-88CD-817CD6C5B331}
+	EndGlobalSection
+EndGlobal

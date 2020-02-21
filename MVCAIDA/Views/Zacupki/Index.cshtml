@@ -1,0 +1,46 @@
+﻿@model System.Data.DataTable
+@{
+    ViewBag.Title = "Index";
+    //Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<div class="container">
+    <div class="jumbotron">
+        <h1>BIGroup</h1>
+        <table class="table table-bordered table-striped">
+            <tr>
+                <th>Наименование</th>
+                <th>Вид закупки</th>
+                <th>Регион</th>
+                <th>Организатор</th>
+                <th>Начало</th>
+                <th>Окончание</th>
+                <th>Статус</th>
+                <th></th>
+                <th></th>
+            </tr>
+
+            @for (int i = 0; i < Model.Rows.Count; i++)
+            {
+                <tr>
+                    <td>@Model.Rows[i][1]</td>
+                    <td>@Model.Rows[i][2]</td>
+                    <td>@Model.Rows[i][3]</td>
+                    <td>@Model.Rows[i][4]</td>
+                    <td>@Model.Rows[i][5]</td>
+                    <td>@Model.Rows[i][6]</td>
+                    <td>@Model.Rows[i][7]</td>
+                    <td>
+                        <a href="@Url.Action("Edit", "Zacupki", new {@id=@Model.Rows[i][0] })">Edit</a>
+                    </td>
+                    <td>
+                        <a href="@Url.Action("Delete", "Zacupki", new {@id=@Model.Rows[i][0] })">Delete</a>
+                    </td>
+
+                </tr>
+            }
+        </table>
+
+        <a href="@Url.Action("Create","Zacupki")">Add Product</a>
+    </div>
+</div>
